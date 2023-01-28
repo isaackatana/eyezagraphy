@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    background-color: rgb(63, 63, 63);
+    padding: 0px 50px;
+    margin: 0px;
+}
+
+/* ............... header ...............*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bar {
+    display: none;
+}
+
+nav {
+    display: flex;
+
+}
+
+#close {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+/* ............... Introduction Video ...............*/
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-videos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-video video {
+    width: 20px;
+    border-radius: 20px;
+}
+
+.other-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.other-videos video {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-container video {
+    border-radius: 10px;
+}
+
+.video-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+    color: rgb(235, 235, 235);
+}
+
+/* ............... footer ...............*/
+
+footer {
+    display: flex;
+    color: rgb(235, 235, 235);
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+/*.....Small Screen Media Query.....*/
+
+@media (max-width: 475px){
+}
