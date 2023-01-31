@@ -7,10 +7,7 @@
 
 body {
     display: block;
-    margin: 8px;
-    background-color: rgb(63, 63, 63);
-    padding: 0px 50px;
-    margin: 0px;
+    background-color: #000000;
 }
 
 /* ............... header ...............*/
@@ -20,6 +17,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 80px;
 }
 
 #bar {
@@ -42,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0px 30px;
+    padding: 0px 15px;
     list-style: none;
 }
 
@@ -53,57 +51,55 @@ nav ul li a {
 
 /* ............... Introduction Video ...............*/
 
+
 #container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display:;
+    padding: 20px 80px;
 }
 
-.my-videos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.latest-video {
+.row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.latest-video video {
-    width: 20px;
-    border-radius: 20px;
+.col {
+    flex-basis: 50%;
+    min-width: 250px;
 }
 
-.other-videos {
+.feature-img {
+    flex-basis: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.small-img-row {
     display: flex;
-    flex-direction: column;
+    background-color: #c8c8c8;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
 }
 
-.other-videos video {
-    display: flex;
-    flex-direction: column;
+.small-img{
+    position: relative;
 }
 
-.video-container {
-    display: flex;
-    flex-direction: row;
+.small-img img{
+    width: 150px;
 }
 
-.video-container video {
-    border-radius: 10px;
+.small-img-row p{
+    margin-left: 20px;
+    color: #3c3c3c;
+    line-height: 22px;
+    font-size: 15px;
 }
-
-.video-details {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 30px 10px;
-    color: rgb(235, 235, 235);
-}
-
 /* ............... footer ...............*/
 
 footer {
@@ -111,7 +107,7 @@ footer {
     color: rgb(235, 235, 235);
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 20px 80px;
 }
 
 /*.....Small Screen Media Query.....*/
