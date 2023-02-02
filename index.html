@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eyezagraphy</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
     
     <header>
 
-        <a href="index.html"><img src="images/Logo.png" width="75px"></a>
+        <a href="index.html"><img src="images/logo.png" width="75px"></a>
 
             <img id="bar" src="icons/bars-solid.png">
 
@@ -39,6 +39,7 @@
 
                 <div class="feature-img">
                     <img src="media/thumb1.jpg" width="100%" alt="">
+                    <img src="images/icons/playBtn.png" class="play-btn" onclick="playVideo('media/intro.mp4')">
                 </div>
 
             </div>
@@ -49,32 +50,36 @@
 
                     <div class="small-img">
                         <img src="media/thumb1.jpg" alt="">
+                        <img src="images/icons/playBtn.png" class="play-btn" onclick="playVideo('media/Intro.mp4')" alt="">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quae autem. Voluptatem quos beatae molestias labore odio eius saepe</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
                 </div>
                 <div class="small-img-row">
 
                     <div class="small-img">
                         <img src="media/thumb1.jpg" alt="">
+                        <img src="images/icons/playBtn.png" class="play-btn" onclick="playVideo('media/Intro.mp4')" alt="">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quae autem. Voluptatem quos beatae molestias labore odio eius saepe</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
                 </div>
                 <div class="small-img-row">
 
                     <div class="small-img">
                         <img src="media/thumb1.jpg" alt="">
+                        <img src="images/icons/playBtn.png" class="play-btn" onclick="playVideo('media/Intro.mp4')" alt="">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quae autem. Voluptatem quos beatae molestias labore odio eius saepe</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
-                </div>  
+                </div>
                 <div class="small-img-row">
 
                     <div class="small-img">
                         <img src="media/thumb1.jpg" alt="">
+                        <img src="images/icons/playBtn.png" class="play-btn" onclick="playVideo('media/Intro.mp4')" alt="">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quae autem. Voluptatem quos beatae molestias labore odio eius saepe</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
                 </div>
  
@@ -84,8 +89,10 @@
 
     </section>
 
-    <section id="container">
-    </section>
+    <div class="video-player" id="videoPlayer">
+        <video id="myVideo" src="media/intro.mp4" type="video/mp4" width="100%" controls autoplay ></video>
+        <img src="images/icons/closeBtn.png" class="close-btn" onclick="stopVideo()" alt="">
+    </div>
 
     <footer>
 

@@ -1,9 +1,10 @@
 
+
 // menu bar .............................
 
-var bar = document.getElementById('bar');
-var close = document.getElementById('close');
-var nav = document.getElementById('navbar');
+let bar = document.getElementById('bar');
+let close = document.getElementById('close');
+let nav = document.getElementById('navbar');
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -15,6 +16,20 @@ if (close) {
     close.addEventListener('click', () => {
         nav.classList.remove('active')
     })
+}
+
+// video player .............................
+
+let videoPlayer = getElementById('videoPlayer');
+let myVideo = getElementById('myVideo');
+
+function stopVideo(){
+    videoPlayer.style.display = 'none';
+}
+
+function playVideo(file){
+    myVideo.src = file;
+    videoPlayer.style.display = 'block';
 }
 
 // contact form .............................

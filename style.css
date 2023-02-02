@@ -7,7 +7,7 @@
 
 body {
     display: block;
-    background-color: #000000;
+    background-color: #1c1c1c;;
 }
 
 /* ............... header ...............*/
@@ -53,7 +53,7 @@ nav ul li a {
 
 
 #container {
-    display:;
+    display: flex;
     padding: 20px 80px;
 }
 
@@ -79,15 +79,17 @@ nav ul li a {
 .small-img-row {
     display: flex;
     background-color: #c8c8c8;
-    margin: 20px 0;
+    margin: 20px 0px 20px 20px;
     align-items: center;
     border-radius: 6px;
     overflow: hidden;
-    width: 85%;
 }
 
 .small-img{
     position: relative;
+    display: flex;
+    align-items: center;
+
 }
 
 .small-img img{
@@ -100,6 +102,41 @@ nav ul li a {
     line-height: 22px;
     font-size: 15px;
 }
+
+.play-btn {
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.small-img .play-btn {
+    width: 12.25%;
+}
+
+.video-player {
+    display: block;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+video:focus {
+    outline: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
 /* ............... footer ...............*/
 
 footer {
@@ -110,7 +147,57 @@ footer {
     padding: 20px 80px;
 }
 
+footer p {
+    font-size: 10px;
+
+}
+
 /*.....Small Screen Media Query.....*/
 
 @media (max-width: 475px){
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    header img {
+        width: 50px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .small-img-row {
+        margin: 15px 0px;
+    }
+
+    .small-img-row p {
+        font-size: 13px;
+    }
+
+    footer {
+        display: flex;
+        color: rgb(235, 235, 235);
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
 }
