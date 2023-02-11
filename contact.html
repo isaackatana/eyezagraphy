@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <a href="index.html"><img src="images/logo.png" width="75px"></a>
+
+            <img id="bar" src="icons/bars-solid.png">
+
+        <nav id="navbar">
+
+            <img id="close" src="icons/xmark-solid.png">
+
+            <ul>
+                <li><a href="index.html" class="active">Latest</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+
+    <section id="contactPage">
+
+        <div class="contactUs">
+            <div id="test">
+                <h3>Talk to us</h3>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="tel" id="phone" name="Phone no" placeholder="Phone">
+                    <input type="email" id="email" name="Email Address" placeholder="Email" required>
+                    <textarea name="message" placeholder="Leave a message"></textarea>
+                    <button type="submit" id="sendBtn">Send</button> 
+                </form>
+            </div>
+    
+            <div id="call">
+    
+                <button class="toggle">Contact</button>
+    
+                <section class="visible">
+                    <li>+254 743 195 701</li>
+                    <li>+254 712 836 113</li>
+                    <li>info@eyezagraphy.com</li>
+                </section>
+    
+                <div class="followUs">
+                    <h3>Social media</h3>
+                    <div class="links">
+                        <i class="instagram"></i>
+                    <i class="facebook"></i>
+                    <i class="twitter"></i>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
+    </section>
+
+    <footer>
+
+        <p>© 2023 Eyezagraphy | All Rights Reserved</p>
+
+        <div class="social-media-links">
+
+            <i class="fab fa-facebook"></i>
+            <div></div>
+            <div></div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>

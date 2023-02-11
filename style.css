@@ -6,8 +6,9 @@
 }
 
 body {
-    display: block;
-    background-color: #1c1c1c;;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
 }
 
 /* ............... header ...............*/
@@ -30,7 +31,7 @@ nav {
 }
 
 #close {
-    display: none;
+    display: nonae;
 }
 
 nav ul {
@@ -47,6 +48,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: rgb(235, 235, 235);
+    font-size: 15px;
 }
 
 /* ............... Introduction Video ...............*/
@@ -117,7 +119,7 @@ nav ul li a {
 }
 
 .video-player {
-    display: block;
+    display: none;
     width: 75%;
     top: 50%;
     left: 50%;
@@ -137,6 +139,133 @@ video:focus {
     width: 30px;
     cursor: pointer;
 }
+
+/* ...........Contact................ */
+
+#contactPage {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 80px;
+}
+
+.contactUs {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr  1fr;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+#test {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    background: rgb(133, 133, 133);
+    padding: 20px;
+}
+
+#test h3 {
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+}
+
+#test form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}
+
+form textarea {
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(207, 207, 207);
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0px 5px;
+    border: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(207, 207, 207);
+    background-color: transparent;
+    color: rgb(207, 207, 207);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(221, 195, 255);
+    border-style: solid;
+    border-color: rgb(221, 195, 255);
+    color: rgb(126, 126, 126);
+}
+
+#call {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 30px;
+}
+ 
+.toggle {
+    width: 300px;
+    padding: 1em 1.2em;
+    background-color: rgb(207, 207, 207);
+    color: rgb(133, 133, 133);
+    font-size: 15px;
+    border-radius: 3em;
+    border: none;
+    border-bottom: 4px solid rgb(133, 133, 133);
+    cursor: pointer;
+    margin: 0px 0px 7.5px;
+}
+
+.toggle:hover {
+    background-color: rgb(133, 133, 133);
+    color: white;
+    border: none;
+    border-bottom: 4px solid rgb(207, 207, 207);
+}
+section {
+    display: none;
+    flex-direction: column;
+    margin: 2em auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    display: none;
+}
+
+section.visible {
+    display: block;
+    margin: 7.5px 0px 7.5px;
+    font-size: 15px;
+}
+.followUs {
+    display: flex;
+}
+
+.followUs h3 {
+    font-size: 15.75px;
+}
+
 /* ............... footer ...............*/
 
 footer {
@@ -191,6 +320,38 @@ footer p {
 
     .small-img-row p {
         font-size: 13px;
+    }
+
+    #contactPage {
+        margin: 0;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .contactUs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #test {
+        display: inline;
+        border-radius: 10px;
+        justify-content: center;
+        padding: 10px 10px 15px 10px;
+        background: rgb(100, 70, 139);
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #test h3 {
+        margin: 0px;
+    }
+
+    #call {
+        margin: 0px;
     }
 
     footer {

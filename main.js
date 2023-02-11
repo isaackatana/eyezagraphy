@@ -1,10 +1,10 @@
 
-
 // menu bar .............................
 
 let bar = document.getElementById('bar');
 let close = document.getElementById('close');
 let nav = document.getElementById('navbar');
+
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -20,8 +20,8 @@ if (close) {
 
 // video player .............................
 
-let videoPlayer = getElementById('videoPlayer');
-let myVideo = getElementById('myVideo');
+let videoPlayer = document.getElementById('videoPlayer');
+let myVideo = document.getElementById('myVideo');
 
 function stopVideo(){
     videoPlayer.style.display = 'none';
