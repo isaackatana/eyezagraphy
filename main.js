@@ -3,8 +3,6 @@
 
 let bar = document.getElementById('bar');
 let close = document.getElementById('close');
-let nav = document.getElementById('navbar');
-
 
 if (bar) {
     bar.addEventListener('click', () => {
